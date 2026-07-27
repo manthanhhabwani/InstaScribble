@@ -1,0 +1,17 @@
+# Design Decisions
+
+## Target Users
+- Students
+- Developers
+- Professionals
+
+## Design Goals
+- Fast note creation
+- Easy note discovery
+- Responsive on desktop and mobile
+- Clean, distraction-free interface
+
+## Key Decisions
+- Desktop: Search bar always visible at the top.
+- Mobile: Search and Add button placed near the bottom for easier one-handed use.
+- Recent notes displayed immediately on launch.
