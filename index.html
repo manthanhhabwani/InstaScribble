@@ -8,11 +8,24 @@
   <body>
     <header></header>
     <main>
-      <section>Notes</section>
+      <section>
+        <h2>Notes</h2>
+        <div class="notes-container">
+          <article class="note-card">
+            <header>
+            <h3>Title</h3>
+            <time datetime="2026-07-27">27 july 2026</time>
+            </header>
+            <p>This is a preview of the note content...</p>
+            <button type="button">Delete</button>
+          </article>
+        </div>
+      </section>
+
       <form>
-        <h2 id="heading">Add a Note</h2>
+        <h2>Add a Note</h2>
         <label for="title">Title</label>
-        <input id="title" type="text" name="title">
+        <input id="title" type="text" name="title" />
         <label for="notes">Notes</label>
         <textarea id="notes" name="notes"></textarea>
         <button type="submit">Save</button>

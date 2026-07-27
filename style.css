@@ -1,0 +1,21 @@
+/* Reset*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variable */
+:root {
+  /*color*/
+  --bg-color: #0F172A;
+  --text-primary: #F8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #38bdf8;
+  --border: #334155;
+  --card: #1E293B;
+  --hover: #0ea5e9;
+  --delete: #ef4444;
+  --success: #22c55e;
+}
