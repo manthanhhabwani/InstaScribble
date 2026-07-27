@@ -9,6 +9,7 @@
 /* Variable */
 :root {
   /*color*/
+  
   --bg-color: #0F172A;
   --text-primary: #F8fafc;
   --text-secondary: #94a3b8;
@@ -18,4 +19,24 @@
   --hover: #0ea5e9;
   --delete: #ef4444;
   --success: #22c55e;
+
+  /* font */
+  
+  --font-heading: "Space Grotesk", sans-serif; 
+  --font-body: "Inter",sans-serif;
+
+  /*Spaces*/
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* Layout */
+
+  --container-width: 1200px;
+
+  /* Radius */
+
+  --radius: 20px;
 }
