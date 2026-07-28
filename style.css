@@ -1,4 +1,4 @@
-/* Reset*/
+/* Reset */
 *,
 *::before,
 *::after {
@@ -8,24 +8,25 @@
 
 /* Variable */
 :root {
-  /*color*/
-  
-  --bg-color: #0F172A;
-  --text-primary: #F8fafc;
+
+  /* color */
+
+  --bg-color: #0f172a;
+  --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --accent: #38bdf8;
   --border: #334155;
-  --card: #1E293B;
+  --card: #1e293b;
   --hover: #0ea5e9;
   --delete: #ef4444;
   --success: #22c55e;
 
   /* font */
-  
-  --font-heading: "Space Grotesk", sans-serif; 
-  --font-body: "Inter",sans-serif;
 
-  /*Spaces*/
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Spaces */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
@@ -39,4 +40,68 @@
   /* Radius */
 
   --radius: 20px;
+}
+
+  /* Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+section {
+  padding-block: var(--space-md);
+}
+
+button {
+  color: var(--text-primary);
+  background: var(--card);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+}
+
+input {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  background: var(--bg-color);
+  color: var(--text-secondary);
+}
+
+textarea {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  background: var(--bg-color);
+  color: var(--text-secondary);
+}
+
+label {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--text-primary);
+  line-height: 1.8;
+}
+  /* Layout*/
+
+.container {
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
 }
