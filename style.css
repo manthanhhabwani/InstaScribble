@@ -135,7 +135,7 @@ label {
 
 /* Header title */
 
-.app-title {
+.site-header {
   align-items: center;
   text-align: center;
   margin-bottom: var(--space-sm);
