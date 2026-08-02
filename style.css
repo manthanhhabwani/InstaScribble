@@ -101,21 +101,24 @@ p {
 
 button {
   color: var(--text-primary);
-  background: var(--card);
+  background: var(--accent);
   font-family: var(--font-body);
   font-size: 1.125rem;
+  transition: all .3s ease;
 }
+
+
 
 input {
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: 1.25rem;
   background: var(--bg-color);
   color: var(--text-secondary);
 }
 
 textarea {
   font-family: var(--font-body);
-  font-size: 1.5rem;
+  font-size: 1rem;
   background: var(--bg-color);
   color: var(--text-secondary);
 }
@@ -148,12 +151,12 @@ main{
   padding-block: var(--space-lg);
 }
 
-.note-section{
+.notes-section{
   margin-bottom: var(--space-lg);
 }
 
-.add-note-section h2,
-.note-section h2{
+.add-notes-section h2,
+.notes-section h2{
   margin-bottom: var(--space-sm);
 }
 
@@ -168,9 +171,14 @@ main{
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--space-md);
+  margin-top: var(--space-xs);
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+}
+
+.note-card:hover{
+  transform: translateY(-06px);
 }
 
 .note-form{
@@ -196,4 +204,21 @@ textarea{
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--space-sm);
+}
+
+input:focus,
+textarea:focus{
+  border-color: var(--accent);
+}
+.form-actions{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note-actions button:hover{
+  background: var(--delete);
+}
+
+.note-form button:hover{
+  background: var(--hover);
 }
