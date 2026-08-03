@@ -104,10 +104,15 @@ button {
   background: var(--accent);
   font-family: var(--font-body);
   font-size: 1.125rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
+  padding: var(--space-xs);
+  border-radius: var(--radius);
 }
 
-
+time{
+  font-size: var(--font-body);
+  color: var(--text-secondary);
+}
 
 input {
   font-family: var(--font-heading);
@@ -143,24 +148,24 @@ label {
   border-bottom: 1px solid var(--border);
 }
 
-.app-title{
+.app-title {
   text-align: center;
 }
 
-main{
+main {
   padding-block: var(--space-lg);
 }
 
-.notes-section{
+.notes-section {
   margin-bottom: var(--space-lg);
 }
 
 .add-notes-section h2,
-.notes-section h2{
+.notes-section h2 {
   margin-bottom: var(--space-sm);
 }
 
-.notes-container{
+.notes-container {
   gap: var(--space-md);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -177,29 +182,29 @@ main{
   gap: var(--space-sm);
 }
 
-.note-card:hover{
+.note-card:hover {
   transform: translateY(-06px);
 }
 
-.note-form{
+.note-form {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 }
 
-.note-header{
+.note-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.note-actions{
+.note-actions {
   display: flex;
   justify-content: flex-end;
 }
 
 input,
-textarea{
+textarea {
   width: 100%;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -207,18 +212,18 @@ textarea{
 }
 
 input:focus,
-textarea:focus{
+textarea:focus {
   border-color: var(--accent);
 }
-.form-actions{
+.form-actions {
   display: flex;
   justify-content: flex-end;
 }
 
-.note-actions button:hover{
+.note-actions button:hover {
   background: var(--delete);
 }
 
-.note-form button:hover{
+.note-form button:hover {
   background: var(--hover);
 }
