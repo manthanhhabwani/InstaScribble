@@ -105,8 +105,8 @@ button {
   font-family: var(--font-body);
   font-size: 1.125rem;
   transition:
-  background-color 0.3s ease,
-  transform .3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
   padding: var(--space-xs);
   border-radius: var(--radius);
   cursor: pointer;
@@ -114,10 +114,10 @@ button {
 }
 
 button:active {
-    transform: translateY(2px);
+  transform: translateY(2px);
 }
 
-time{
+time {
   font-size: 0.75rem;
   color: var(--text-secondary);
 }
@@ -188,7 +188,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 
 .note-card:hover {
@@ -221,8 +221,8 @@ textarea {
 }
 
 input:focus,
-textarea:focus{
-    border-color: var(--accent);
+textarea:focus {
+  border-color: var(--accent);
 }
 
 .form-actions {
