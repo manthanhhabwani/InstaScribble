@@ -20,7 +20,7 @@ noteForm.addEventListener("submit", function (event) {
   const note = {
     title: title,
     content: notes,
-    createdAt: new Date()
+    createdAt: new Date(),
   };
 
   const article = document.createElement("article");
@@ -28,7 +28,11 @@ noteForm.addEventListener("submit", function (event) {
   article.innerHTML = `
   <header class="note-header">
   <h3>${note.title}</h3>
-  <time>${note.createdAt.toLocaleDateString()}</time>
+  <time>${note.createdAt.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+  })}</time>
   </header>
   <p>${note.content}</p>
   <footer class="note-actions">
@@ -37,8 +41,10 @@ noteForm.addEventListener("submit", function (event) {
 `;
   notesContainer.append(article);
 
+  noteForm.reset();
+
   const deleteButton = article.querySelector("button");
-  deleteButton.addEventListener("click", function (){
+  deleteButton.addEventListener("click", function () {
     article.remove();
   });
 });
