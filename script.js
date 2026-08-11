@@ -2,24 +2,25 @@ const noteForm = document.querySelector(".note-form");
 const titleInput = document.querySelector("#title");
 const notesTextarea = document.querySelector("#notes");
 const notesContainer = document.querySelector(".notes-container");
+const notes = [];
 noteForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const title = titleInput.value.trim();
-  const notes = notesTextarea.value.trim();
+  const noteContent = notesTextarea.value.trim();
 
-  if (notes === "") {
+  if (noteContent === "") {
     return;
   }
 
   console.log(title);
-  console.log(notes);
+  console.log(noteContent);
 
   const createdAt = new Date();
   const dateText = createdAt.toLocaleDateString();
   const note = {
     title: title,
-    content: notes,
+    content: noteContent,
     createdAt: new Date(),
   };
 
