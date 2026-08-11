@@ -20,5 +20,19 @@ noteForm.addEventListener("submit", function (event) {
     content: notes,
   };
 
-  console.log(note);
+  const article = document.createElement("article");
+  article.classList.add("note-card");
+  article.innerHTML = `
+  <h3>${note.title}</h3>
+  <p>${note.content}</p>
+  <footer class="note-actions">
+    <button type="button">Delete</button>
+  </footer>
+`;
+  notesContainer.append(article);
+
+  const deleteButton = article.querySelector("button");
+  deleteButton.addEventListener("click", function (){
+    article.remove();
+  });
 });
