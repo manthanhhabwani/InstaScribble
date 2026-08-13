@@ -24,6 +24,12 @@ noteForm.addEventListener("submit", function (event) {
     createdAt: new Date(),
   };
 
+  notes.push(note);
+
+  JSON.stringify(notes);
+
+  localStorage.setItem("notes", JSON.stringify(notes));
+
   const article = document.createElement("article");
   article.classList.add("note-card");
   article.innerHTML = `
@@ -32,7 +38,7 @@ noteForm.addEventListener("submit", function (event) {
   <time>${note.createdAt.toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
-    year: "numeric"
+    year: "numeric",
   })}</time>
   </header>
   <p>${note.content}</p>
